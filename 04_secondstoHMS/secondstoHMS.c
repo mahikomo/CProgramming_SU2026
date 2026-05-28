@@ -5,6 +5,13 @@
 
 
 
+// 1) hw YEARS TO MINUTES 
+
+// 2) no class monday
+
+// 3) practice hw due sunday
+
+// read textbook & intro to functions and operations
 
 
 */
@@ -13,17 +20,32 @@
 #include <stdio.h>
 
 
-int main (void){
 
-    int seconds = 0;
+void secondsToHMS(int seconds) {
     int minutes = 0;
     int hours = 0;
     int remaining_minutes = 0;
     int remaining_seconds = 0;
 
+     if (seconds < 0){
+        puts("The seconds cannot be negative");
+
+}
+
+
+
+int main (void){
+
+    int seconds = 0;
+    
     // Get the number of seconds
     puts ("Enter the number of seconds");
     scanf("%d", &seconds);
+
+    // Call the functions
+    secondstoHMS(seconds);
+
+    }
     
     // Calculate the number of minutes
     minutes = seconds / 60;
